@@ -41,21 +41,6 @@ const startServer = async () => {
 
 startServer();
 module.exports = app;
-//export default app;
-/*
-mongoose
-  .connect(
-    "mongodb+srv://meethu:meethu123@cluster0.ccppur1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  )
-  .then(() => {
-    console.log("Connected to database!");
-    app.listen(8000, () => {
-      console.log("Server is running on port 8000");
-    });
-  })
-  .catch(() => {
-    console.log("Connection failed!");
-  });
-  */
+
 
   
