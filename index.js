@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 const startServer = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://meethu:meethu123@cluster0.ccppur1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      "mongodb+srv://akhilvarghese46:myw2BCXK88KxfSJ9@bibliohome.isiwviy.mongodb.net/?retryWrites=true&w=majority&appName=biblioHome"
       
     );
     app.listen(8080, () => console.log("Server started on port 8000"));
