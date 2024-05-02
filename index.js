@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
   res.send("Hello from Node API Server Updated");
 });
 
-//export default app;
+
 
 const startServer = async () => {
   try {
@@ -40,6 +40,8 @@ const startServer = async () => {
 };
 
 startServer();
+
+export default app;
 /*
 mongoose
   .connect(
