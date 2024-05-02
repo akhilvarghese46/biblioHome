@@ -26,6 +26,21 @@ app.get("/", (req, res) => {
 
 export default app;
 
+const startServer = async () => {
+  try {
+    await mongoose.connect(
+      "mongodb+srv://meethu:meethu123@cluster0.ccppur1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+      { useNewUrlParser: true }
+    );
+    app.listen(8000, () => console.log("Server started on port 8000"));
+  } catch (error) {
+    console.error(error);
+    process.exit(1);
+  }
+};
+
+startServer();
+/*
 mongoose
   .connect(
     "mongodb+srv://meethu:meethu123@cluster0.ccppur1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
@@ -39,3 +54,4 @@ mongoose
   .catch(() => {
     console.log("Connection failed!");
   });
+  */
