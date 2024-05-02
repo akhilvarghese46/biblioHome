@@ -2,6 +2,7 @@ const Book= require("../modal/book");
 
 // to view all the books
 
+
 const getBooks = async (req, res) => {
   try {
     const books = await Book.find({});
