@@ -6,7 +6,7 @@ const Book= require("../modal/book");
 const getBooks = async (req, res) => {
   try {
     const books = await Book.find({});
-    res.status(200).json(books);
+    res.status(200).send(books);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
