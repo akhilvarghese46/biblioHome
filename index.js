@@ -4,6 +4,10 @@ const bookRoute = require("./routes/book.routes.js");
 const wishlistRoute = require("./routes/wishlist.routes.js");
 const app = express();
 const cors = require('cors');
+
+
+
+
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -20,6 +24,7 @@ app.get("/", (req, res) => {
   res.send("Hello from Node API Server Updated");
 });
 
+export default app;
 
 mongoose
   .connect(
